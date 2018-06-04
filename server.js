@@ -19,7 +19,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 require(path.join(__dirname, '/app/routing/apiroutes.js'))(app);
-require(path.join(__dirname, '/app/routing/htmlRoutes.js'))(app);
+require(path.join(__dirname, '/app/routing/htmlroutes.js'))(app);
 
 
 app.listen(PORT, function() {
