@@ -16,8 +16,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 
-require(path.join(__dirname, '../friend-finder2/app/routing/apiroutes.js'))(app);
-require(path.join(__dirname, '../friend-finder2/app/routing/htmlRoutes.js'))(app);
+require(path.join(__dirname, 'app/routing/apiroutes.js'))(app);
+require(path.join(__dirname, 'app/routing/htmlRoutes.js'))(app);
 
 
 app.listen(PORT, function() {
