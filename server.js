@@ -14,10 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-
-
-//require(path.join(__dirname, 'app/routing/apiroutes.js'))(app);
-//require(path.join(__dirname, 'routing/htmlRoutes.js'))(app);
 require('./app/routing/apiroutes.js')(app); 
 require('./app/routing/htmlroutes.js')(app);
 
